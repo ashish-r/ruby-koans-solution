@@ -103,6 +103,9 @@ EOS
     #
     # Ruby programmers tend to favor the shovel operator (<<) over the
     # plus equals operator (+=) when building up strings.  Why?
+    # Answer:
+    # << Performs the operation in place, which means object_id will not change,
+    # += means value after calculation is assigned to that variable which resuults in changes object_id
   end
 
   def test_double_quoted_string_interpret_escape_characters

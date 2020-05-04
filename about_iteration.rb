@@ -89,7 +89,7 @@ class AboutIteration < Neo::Koan
 
     # Extra Credit:
     # Describe in your own words what inject does.
-    # Ans:
+    # Answer:
     # inject is like reduce function in js, takes initial value (optional) and a block. 
     # The block has two param the accumulated value and current item
     # returns the final accumulated value when iteration over every element completes

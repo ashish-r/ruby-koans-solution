@@ -32,6 +32,10 @@ class AboutSymbols < Neo::Koan
   #
   # Why do we convert the list of symbols to strings and then compare
   # against the string value rather than against symbols?
+  # Answer:
+  # Comparing Symbol.all_symbols.include?(:some_random_name) will always return true.
+  # Because while writing symbol inside .include? will creates it.
+
 
   in_ruby_version("mri") do
     RubyConstant = "What is the sound of one hand clapping?"
@@ -97,6 +101,7 @@ class AboutSymbols < Neo::Koan
   # THINK ABOUT IT:
   #
   # Why is it not a good idea to dynamically create a lot of symbols?
+  # Answer:
   # Symbols are immutable.They are only put into memory once, 
   # making them very efficient to use for things like keys in hashes 
   # but they stay in memory until the program exits. 

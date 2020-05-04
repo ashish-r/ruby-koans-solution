@@ -33,7 +33,8 @@ class AboutRegularExpressions < Neo::Koan
     # THINK ABOUT IT:
     #
     # When would * fail to match?
-    # never
+    # Answer:
+    # It will never fail for a string
   end
 
   # THINK ABOUT IT:
@@ -41,6 +42,10 @@ class AboutRegularExpressions < Neo::Koan
   # We say that the repetition operators above are "greedy."
   #
   # Why?
+  # Answer:
+  # The * is used to match and return as many possible characters from the input. Have 
+  # to be careful when using this as since it'll grab as much data as it can you might 
+  # end up with more than what you want. Performs a lot of backtracking to get result.
 
   # ------------------------------------------------------------------
 
@@ -145,7 +150,7 @@ class AboutRegularExpressions < Neo::Koan
   # THINK ABOUT IT:
   #
   # Explain the difference between a character class ([...]) and alternation (|).
-
+  # Answer:
   # Alternation works on entire regexp captures; 
   # character classes just work on characters 
   # (so one character class will only alternate across a single character)

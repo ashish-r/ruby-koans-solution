@@ -98,6 +98,9 @@ class AboutMessagePassing < Neo::Koan
     #
     # If the method :method_missing causes the NoMethodError, then
     # what would happen if we redefine method_missing?
+    # Answer:
+    # Our custom method will handle the logic then,
+    # Unless the error is thrown from our custom function, there will be no error.
     #
     # NOTE:
     #

@@ -33,6 +33,9 @@ class AboutNil < Neo::Koan
     # or
     #    obj == nil
     # Why?
+    # Answer:
+    # .nil? is more elligent and morever it will return true only for nil.
+    # in case of == there will be a comarison but it will hardly make any performance difference
   end
 
 end
